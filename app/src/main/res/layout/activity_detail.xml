@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#3aa0c4"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margiins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:text="ºC"
+                android:layout_marginLeft="@dimen/margiins"
+                android:textColor="@color/whiteColor"
+                android:textSize="75sp" />
+
+
+            <ImageView
+                android:id="@+id/w_icon"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.8"
+                android:layout_marginLeft="@dimen/margiins"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/condition"
+            android:layout_marginTop="@dimen/margiins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear sky"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="20dp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margiins">
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margiins"
+                android:id="@+id/pres_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/pressure"
+                android:tint="@color/whiteColor" />
+
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pres_image"
+                android:layout_toEndOf="@+id/pres_image"
+                android:text="0000hPa"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp" />
+
+
+            <ImageView
+
+                android:layout_marginLeft="@dimen/margiins"
+                android:layout_toEndOf="@id/pressure"
+                android:id="@+id/wind_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/wind"
+                android:tint="@color/whiteColor" />
+            <TextView
+                android:id="@+id/wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wind_image"
+                android:layout_toEndOf="@+id/wind_image"
+                android:text="0.1 m/s"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_marginLeft="@dimen/margiins"
+                android:layout_toEndOf="@id/wind"
+                android:id="@+id/hum_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/humidity"
+                android:tint="@color/whiteColor" />
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/hum_image"
+                android:layout_toEndOf="@+id/hum_image"
+                android:text="20 %"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/margiins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margiins"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/temp_min"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margiins"
+                android:text="ºC"
+                android:gravity="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:id="@+id/temp_max"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margiins"
+                android:text="ºC"
+                android:textColor="@color/whiteColor"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/margiins"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
